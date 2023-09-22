@@ -1,17 +1,6 @@
 #include "main.h"
 
 /**
-  * is_digit - Entry point of this function
-  *
-  * @c: argument
-  */
-
-int is_digit(char c)
-{
-	return isdigit((unsigned char)c);
-}
-
-/**
  * get_precision - Calculates the precision for printing
  * @format: Formatted string in which to print the arguments
  * @i: List of arguments to be printed.
