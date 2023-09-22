@@ -1,6 +1,17 @@
 #include "main.h"
 
 /**
+  * is_digit - Entry point of this function
+  *
+  * @c: argument
+  */
+
+int is_digit(char c)
+{
+	return isdigit((unsigned char)c);
+}
+
+/**
  * get_precision - Calculates the precision for printing
  * @format: Formatted string in which to print the arguments
  * @i: List of arguments to be printed.
@@ -8,6 +19,7 @@
  *
  * Return: Precision.
  */
+
 int get_precision(const char *format, int *i, va_list list)
 {
 	int curr_i = *i + 1;
